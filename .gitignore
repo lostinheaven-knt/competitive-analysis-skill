@@ -2,3 +2,9 @@ __pycache__/
 *.pyc
 *.pyo
 .DS_Store
+/dist/
+/IMPLEMENTATION_PLAN.md
+/*-competitive-analysis-*.md
+/*-platform-*.csv
+/*-next-step-plan.md
+/*-trial.md

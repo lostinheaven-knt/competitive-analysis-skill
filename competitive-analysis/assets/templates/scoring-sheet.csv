@@ -1,0 +1,2 @@
+candidate,competitor_type,inclusion_reason,evidence_points,uncertainty_points,ranking_logic,market_score,growth_score,product_score,pricing_score,channel_score,brand_score,review_score,innovation_score,total_score,confidence,notes
+Example Competitor,direct,Strong overlap in target segment and channel,"High shelf presence; overlapping buyer profile","Regional data incomplete","Balanced weights with product and channel emphasis",0.8,0.6,0.9,0.5,0.7,0.8,0.6,0.5,,medium,Example row

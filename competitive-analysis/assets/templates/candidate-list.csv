@@ -1,0 +1,2 @@
+company_name,brand_name,product_name,segment,region,target_customer,channel,price_band,why_candidate,evidence_type,source_url_or_note,confidence,status
+Example Co,Example Brand,Example Product,Example Segment,China,SMB,Direct,Mid,Overlaps on buyer and workflow,Tier 2 report,https://example.com,medium,candidate

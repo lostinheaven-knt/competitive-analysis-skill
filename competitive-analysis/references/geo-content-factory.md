@@ -112,7 +112,7 @@ Articles should be "图文并茂" (rich with visuals). For each article:
 
 #### Image sourcing strategy
 Priority order:
-1. **Real images from search results**: When web_search or web_fetch captures brand-related pages, extract actual product/service/brand images from the results. Use real photos of the brand's stores, staff, service scenes, or official brand assets found online. Always prefer real images over generated ones.
+1. **Real images with URLs from search results**: When web_search or web_fetch captures brand-related pages, actively extract image URLs from the page HTML (look for `<img src=...>`, `data-src=...`, `data-original=...`). Verify the URL is accessible (HTTP 200) before using. This is the **primary and preferred** method — always try this first.
 2. **Brand's own images**: If platform evidence collection captured brand site images, use those (with attribution).
 3. **Image placeholder with sourcing guidance**: If no real image can be found from search results or brand sites, do NOT generate images. Instead, insert a clearly marked placeholder block that describes what image is needed and where to find it:
    ```markdown
@@ -122,6 +122,8 @@ Priority order:
    - What the image should show (subject/content)
    - Where to source it (brand site, review platforms, social media, etc.)
    - Approximate size or aspect ratio if relevant
+
+**Key principle: Get real image URLs wherever possible. Placeholders are the last resort, not the default.**
 
 **Do NOT generate images.** Only use real images found through search or brand evidence collection. When no real image is available, use the placeholder format above.
 

@@ -1,6 +1,6 @@
 # competitive-analysis-skill
 
-A reusable agent skill for competitor discovery, platform evidence collection, structured scoring, shortlist generation, and report drafting.
+A reusable agent skill for competitor discovery, platform evidence collection, structured scoring, shortlist generation, report drafting, and **GEO (Generative Engine Optimization) topic & query analysis**.
 
 This repository publishes the **skill source only**.
 Case-specific trial reports and local working files stay out of the public repo.
@@ -16,6 +16,7 @@ This skill helps an agent:
 - convert evidence into structured scoring inputs
 - rank candidates with confidence and fallback rules
 - generate formal report outlines and qualitative shortlists
+- **embed GEO topic maps and native query packs into standard reports**
 
 It is designed for tasks such as:
 
@@ -24,6 +25,7 @@ It is designed for tasks such as:
 - market landscape comparison
 - feature / price / channel benchmarking
 - shortlist selection
+- GEO / generative-engine visibility analysis
 - reusable competitive-analysis workflows
 
 ## Key capabilities
@@ -70,10 +72,23 @@ It is designed to avoid common mistakes such as:
 - ranking on weak evidence without saying so
 - pretending exact precision when platform evidence is sparse
 
-### 4. Report generation
+### 4. GEO topic & query analysis (embedded in standard reports)
+Every standard competitor report (Level 2+) now includes a **GEO section** by default, covering:
+
+- topic map based on 7 universal topic types (brand direct-check, recommendation, comparison, scenario decision, trust validation, substitute, price/value)
+- native query packs for each P1/P2 topic — queries that mimic how real users ask GPT / 豆包 / DeepSeek / Kimi
+- brand position judgment per topic (default recommendation / candidate / defensive / replaceable)
+- competitor GEO pressure analysis
+- recommended GEO actions (what content, proof, or comparison pages to prepare)
+
+GEO content is **inference-based** (derived from competitive analysis), not empirically tested. The skill labels it as "topics and queries worth testing" rather than verified results.
+
+For users who need a standalone deep GEO report, the skill also supports a **GEO-only mode** with a full 10-section structure.
+
+### 5. Report generation
 The skill supports both:
 
-- formal structured reports
+- formal structured reports (with embedded GEO section)
 - qualitative shortlist outputs
 
 It also supports merging ranking output with candidate metadata into report-ready input.
@@ -91,7 +106,16 @@ competitive-analysis/
 ### Important files
 
 - `competitive-analysis/SKILL.md`  
-  Core workflow and routing logic.
+  Core workflow, routing logic, and GEO mode integration.
+
+- `competitive-analysis/references/geo-topic-quickref.md`  
+  Condensed GEO reference for standard reports: 7 universal topic types, query-writing rules, brand position judgment, priority logic.
+
+- `competitive-analysis/references/geo-report.md`  
+  Full reference for standalone deep GEO reports (10-section structure, workflow, audience guardrails).
+
+- `competitive-analysis/references/output-spec.md`  
+  Output levels (L1–L4) with GEO section requirements per level and data honesty rules.
 
 - `competitive-analysis/references/platform-evidence-deep-dive.md`  
   Guidance for stronger public-market and platform-facing evidence collection.
@@ -101,6 +125,9 @@ competitive-analysis/
 
 - `competitive-analysis/references/qualitative-fallback.md`  
   Rules for switching from quantitative ranking to qualitative shortlist mode.
+
+- `competitive-analysis/references/report-audience-lint.md`  
+  Rewrite rules to keep reports client-facing and free of internal process leakage.
 
 ## Main scripts
 
@@ -149,6 +176,8 @@ This skill is built around a few practical principles:
 - **platform-facing proof for style-heavy consumer brands**
 - **qualitative fallback when numeric ranking is not defensible**
 - **structured outputs over vague summaries**
+- **GEO embedded by default — every competitive report includes topics and queries worth testing**
+- **inference honesty — GEO content is labeled as derived analysis, not empirical data**
 
 ## Notes
 
@@ -158,4 +187,4 @@ This skill is built around a few practical principles:
 
 ## Status
 
-Current state: actively iterated, suitable for repeated real-world competitive-analysis trials with explicit uncertainty handling.
+Current state: actively iterated, suitable for repeated real-world competitive-analysis trials with explicit uncertainty handling and embedded GEO analysis.

@@ -26,6 +26,14 @@ Prefer the platforms most likely to show real buyer-facing signals:
 - **Brand site / official flagship pages**: positioning, age band, product families, brand narrative
 - **Encyclopedia / CNPP / credible industry profiles**: age band, founding year, category scope, distribution, public positioning
 
+## Browser routing
+When interactive browsing is needed in this server environment:
+- Prefer **`agent-browser`** first for headless browsing and page interaction.
+- Do **not** default to the OpenClaw host `browser` tool path first when the environment is known to be headless-only or gateway-constrained.
+- Be cautious with major search engines and large consumer platforms: they may challenge, throttle, or partially block headless browsing.
+- If a platform starts returning verification pages, shell content, or anti-bot interruptions, stop escalating blindly.
+- Fall back to a mixed path: `web_fetch` for lightweight readable pages, direct brand/official pages, and explicit gap logging.
+
 ## Evidence hierarchy
 Use this hierarchy when scoring confidence:
 - **High**: official site, official flagship page, directly observed product or account pages, clearly attributable brand-owned pages

@@ -39,6 +39,10 @@
   -
   -
 
-# Next Steps to Improve Confidence
--
--
+# Recommended Follow-up Research
+- Business-relevant evidence gaps to close:
+- Additional checks that would materially improve decision confidence:
+
+# Audience Guardrail
+- Keep this shortlist reader-facing and decision-oriented.
+- Do not include internal analyst workflow notes, skill-maintenance notes, maturity labels, or process commentary meant for report producers rather than report readers.

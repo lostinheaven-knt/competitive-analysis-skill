@@ -59,6 +59,9 @@ Use `references/geo-report.md` plus `assets/templates/geo-report-outline.md` for
 For any reader-facing deliverable, also read `references/report-audience-lint.md` before finalizing.
 
 Standard reports (Level 2+) include a GEO section by default. The GEO section in standard reports covers:
+
+GEO content articles are an **optional extension**. Generate them only when the user explicitly asks for publishable content. When generated, each article is saved as a separate file targeting a specific GEO topic with SEO/GEO optimization applied.
+
 1. Compact topic map
 2. P1 (and P2 for Level 3) topic packs with query packs
 3. Brand position judgment per topic
@@ -129,7 +132,17 @@ Run the reader-facing output through `references/report-audience-lint.md` before
    - Frame all GEO content as inference-based ("based on competitive analysis, the brand is likely to..."), not empirically tested.
    - For Level 1 quick shortlists, optionally add 1-3 highest-priority test queries as a quick tip.
 
-10. Produce the output.
+10. Generate GEO content articles (optional — only when the user asks for publishable content).
+    - Read `references/geo-content-factory.md` for the article generation workflow, template selection, and quality rules.
+    - For each P1 topic (and optionally P2), select the appropriate article template from `assets/templates/article-templates/`.
+    - Populate articles using data already gathered in steps 1-9: brand facts, comparison tables, pricing, FAQ answers from GEO query packs, trust signals, and competitive positioning.
+    - Apply GEO optimization rules: entity clarity, quotable facts, FAQ coverage, comparison tables, structural clarity, authority signals, freshness.
+    - Include visual elements: at least 1 image per 500 words, comparison tables, data callout boxes, and image placeholders with sourcing guidance where actual images are unavailable. Do NOT generate images — only use real images from search results or brand evidence collection.
+    - Generate SEO meta information for each article (meta title, meta description, primary/secondary keywords, schema type).
+    - Do not fabricate data. Flag missing data with `[待补充]` or `[需验证]`.
+    - Save each article as a separate file: `[brand-slug]-[topic-slug]-article.md`.
+
+11. Produce the output.
     - Read `references/output-spec.md` for output level and format.
     - Include: shortlist, reasons, evidence quality, scoring logic, GEO section, risks, and next steps.
     - When evidence is incomplete, say so plainly.
@@ -144,6 +157,7 @@ Read only what is needed:
 - Need ways to discover candidates -> `references/competitor-identification-methods.md`
 - Need platform-facing evidence collection and public proof standards -> `references/platform-evidence-deep-dive.md`
 - Need GEO section for standard reports (topic map, query packs, brand position) -> `references/geo-topic-quickref.md`
+- Need GEO content article generation workflow and templates -> `references/geo-content-factory.md`
 - Need standalone deep GEO report (full 10-section structure) -> `references/geo-report.md`
 - Need reader-facing report cleanup, rewrite rules, or audience linting -> `references/report-audience-lint.md`
 - Need metrics, normalization, or weighting -> `references/scoring-framework.md`
@@ -162,6 +176,7 @@ Use bundled assets and scripts deliberately:
 - Need a qualitative shortlist scaffold when ranking is not defensible -> `assets/templates/qualitative-shortlist.md`
 - Need a formal Level 3 standard report scaffold -> `assets/templates/report-outline.md`
 - Need the GEO section template for a standard competitor report -> embedded in `assets/templates/report-outline.md` (GEO 话题与 Query 推荐 section)
+- Need article templates for GEO content generation -> `assets/templates/article-templates/` (entity-definition.md, comparison.md, listicle.md, alternative-to.md, how-to-guide.md, faq-page.md)
 - Need a formal GEO report scaffold -> `assets/templates/geo-report-outline.md`
 - Need to validate whether scope is sufficient before analysis -> `scripts/validate_input_scope.py`
 - Need to create a platform evidence row scaffold for multiple brands and platforms -> `scripts/platform_evidence_template.py`

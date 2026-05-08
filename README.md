@@ -17,6 +17,7 @@ This skill helps an agent:
 - rank candidates with confidence and fallback rules
 - generate formal report outlines and qualitative shortlists
 - **embed GEO topic maps and native query packs into standard reports**
+- **generate SEO/GEO-optimized articles from GEO topics** (optional, when the user asks for publishable content)
 
 It is designed for tasks such as:
 
@@ -85,7 +86,19 @@ GEO content is **inference-based** (derived from competitive analysis), not empi
 
 For users who need a standalone deep GEO report, the skill also supports a **GEO-only mode** with a full 10-section structure.
 
-### 5. Report generation
+### 5. GEO content factory (optional)
+When the user asks for publishable content, the skill can generate one SEO/GEO-optimized article per GEO topic:
+
+- **6 article templates**: entity definition, comparison, listicle, alternative-to, how-to guide, FAQ page
+- **Auto-mapped to topic types**: recommendation → listicle, comparison → comparison page, trust → FAQ, etc.
+- **Populated from analysis data**: brand facts, scoring, platform evidence, GEO queries → FAQ answers
+- **GEO-optimized**: entity clarity, quotable facts, comparison tables, FAQ coverage, authority signals, freshness
+- **图文并茂**: comparison tables, data callout boxes, real images from search results (or sourcing placeholders), at least 1 visual per 500 words
+- **SEO meta**: title, description, primary/secondary keywords, schema type per article
+
+Articles are optional — they are only generated when the user explicitly asks for content to publish.
+
+### 6. Report generation
 The skill supports both:
 
 - formal structured reports (with embedded GEO section)
@@ -101,6 +114,7 @@ competitive-analysis/
 ├── references/
 ├── assets/templates/
 └── scripts/
+    ├── assets/templates/article-templates/
 ```
 
 ### Important files
@@ -128,6 +142,12 @@ competitive-analysis/
 
 - `competitive-analysis/references/report-audience-lint.md`  
   Rewrite rules to keep reports client-facing and free of internal process leakage.
+
+- `competitive-analysis/references/geo-content-factory.md`  
+  Workflow for generating SEO/GEO articles from GEO topics: template selection, data population, GEO optimization, visual strategy, quality check.
+
+- `competitive-analysis/assets/templates/article-templates/`  
+  Six article templates: entity-definition, comparison, listicle, alternative-to, how-to-guide, faq-page.
 
 ## Main scripts
 

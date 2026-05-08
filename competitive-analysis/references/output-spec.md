@@ -27,6 +27,7 @@ Include:
   - brand position judgment per topic (default recommendation / candidate / defensive / replaceable)
   - key competitor GEO pressure
   - recommended GEO actions (what content, proof, or comparison pages to prepare)
+- optional: GEO content articles (one per P1/P2 topic, saved as separate files — only when the user asks for publishable content)
 
 ### Level 3: formal report
 Use when the output is intended for review, circulation, or decision support.
@@ -47,6 +48,7 @@ Include:
    - recommended GEO actions
    - priority test query list (P1 / P2 / P3)
 10. Recommended next steps
+11. optional: GEO content articles (one per P1/P2 topic, saved as separate files — only when the user asks for publishable content)
 
 ### Level 4: monitoring pack
 Use when the user wants a repeatable tracking setup.

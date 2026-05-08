@@ -16,15 +16,15 @@ All GEO content in standard reports is **inference-based** (derived from competi
 
 ## 7 universal topic types
 
-| # | Type | What the user is doing | Example prompt pattern |
-|---|---|---|---|
-| 1 | Brand direct-check | Already knows the brand, wants a judgment | `[brand]怎么样？` / `Is [brand] reliable?` |
-| 2 | Recommendation | Wants candidates, doesn't know specific brands | `有什么[category]推荐？` / `Which [category] should I pick?` |
-| 3 | Comparison | Choosing between two or more candidates | `[brand A]和[brand B]哪个好？` / `[A] vs [B]?` |
-| 4 | Scenario decision | Asking from a specific use case or user type | `如果我是[人群]，选哪个？` / `Which is best for [scenario]?` |
-| 5 | Trust / risk validation | Checking legitimacy, quality, or hidden risks | `[brand]靠谱吗？` / `Is this legit? Any catch?` |
-| 6 | Substitute / alternative | Wants a replacement, cheaper option, or upgrade | `有没有比[brand]更好的替代？` / `Alternatives to [brand]?` |
-| 7 | Price / value judgment | Asking whether the price or paid tier is worth it | `[brand]付费版值得买吗？` / `Is the paid version worth it?` |
+| # | Type | What the user is doing | Example prompt pattern | Recommended article template |
+|---|---|---|---|---|
+| 1 | Brand direct-check | Already knows the brand, wants a judgment | `[brand]怎么样？` / `Is [brand] reliable?` | Entity Definition |
+| 2 | Recommendation | Wants candidates, doesn't know specific brands | `有什么[category]推荐？` / `Which [category] should I pick?` | Listicle |
+| 3 | Comparison | Choosing between two or more candidates | `[brand A]和[brand B]哪个好？` / `[A] vs [B]?` | Comparison |
+| 4 | Scenario decision | Asking from a specific use case or user type | `如果我是[人群]，选哪个？` / `Which is best for [scenario]?` | How-to Guide |
+| 5 | Trust / risk validation | Checking legitimacy, quality, or hidden risks | `[brand]靠谱吗？` / `Is this legit? Any catch?` | FAQ Page |
+| 6 | Substitute / alternative | Wants a replacement, cheaper option, or upgrade | `有没有比[brand]更好的替代？` / `Alternatives to [brand]?` | Alternative-To |
+| 7 | Price / value judgment | Asking whether the price or paid tier is worth it | `[brand]付费版值得买吗？` / `Is the paid version worth it?` | FAQ Page / How-to Guide |
 
 These are cross-industry. Do not add industry-specific topic types to the main skill; keep those in case reports or industry references.
 

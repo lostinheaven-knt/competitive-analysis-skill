@@ -137,7 +137,7 @@ Run the reader-facing output through `references/report-audience-lint.md` before
     - For each P1 topic (and optionally P2), select the appropriate article template from `assets/templates/article-templates/`.
     - Populate articles using data already gathered in steps 1-9: brand facts, comparison tables, pricing, FAQ answers from GEO query packs, trust signals, and competitive positioning.
     - Apply GEO optimization rules: entity clarity, quotable facts, FAQ coverage, comparison tables, structural clarity, authority signals, freshness.
-    - Include visual elements: at least 1 image per 500 words, comparison tables, data callout boxes, and image placeholders with sourcing guidance where actual images are unavailable. Do NOT generate images — only use real images from search results or brand evidence collection.
+    - Include visual elements: at least 1 image per 500 words, comparison tables, data callout boxes. **Prioritize extracting real image URLs** from web pages (brand sites, e-commerce, media articles) — verify accessibility before using. Only fall back to image placeholders with sourcing guidance when no real image URL can be found. Do NOT generate images — only use real images from search results or brand evidence collection.
     - Generate SEO meta information for each article (meta title, meta description, primary/secondary keywords, schema type).
     - Do not fabricate data. Flag missing data with `[待补充]` or `[需验证]`.
     - Save each article as a separate file: `[brand-slug]-[topic-slug]-article.md`.

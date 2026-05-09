@@ -8,3 +8,12 @@ __pycache__/
 /*-platform-*.csv
 /*-next-step-plan.md
 /*-trial.md
+
+# Internal planning docs - not for public repo
+docs/superpowers/
+
+# Downloaded images - can be re-fetched from source sites
+images/
+
+# PDF files
+*.pdf

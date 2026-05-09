@@ -7,7 +7,8 @@
 ![金贝家政品牌标识](https://img30.360buyimg.com/popshop/jfs/t1/273309/5/16478/7411/67f386feF30811bdb/658c5e273da5b237.png)
 *图片来源：京东金贝乐到家服务旗舰店*
 
-<!-- 📷 待补充图片：金贝家政培训/服务场景照片，可从金贝官网 jinbeijz.com 或大众点评金贝家政商户页获取 -->
+![金贝家政培训与服务场景](http://www.jinbeijz.com/upfiles/202111/20/a9f4b07b9c1a731a7.jpg)
+*图片来源：金贝官网 jinbeijz.com*
 
 ## 基础问题
 

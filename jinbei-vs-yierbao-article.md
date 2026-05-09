@@ -7,7 +7,8 @@
 ![宜尔宝母婴护理服务场景](http://www.gdyeb.com/u_file/2505/photo/f63cdf5ffdf.jpg)
 *图片来源：宜尔宝官网 gdyeb.com*
 
-<!-- 📷 待补充图片：金贝家政门店/服务场景照片，可从金贝官网 jinbeijz.com 或大众点评金贝家政商户页获取 -->
+![金贝家政服务场景](http://www.jinbeijz.com/upfiles/202012/01/aa13a4afdbfb6a23d.jpg)
+*图片来源：金贝官网 jinbeijz.com*
 
 ## 为什么你在纠结金贝家政和宜尔宝？
 
